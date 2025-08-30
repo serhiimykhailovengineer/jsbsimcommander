@@ -2210,7 +2210,7 @@ void wxShape::ReadRegions(wxExpr *clause)
             the_string = third->StringValue();
           }
         }
-        if (the_string)
+        if (!the_string.empty())
         {
           wxShapeTextLine *line =
               new wxShapeTextLine(the_x, the_y, the_string);

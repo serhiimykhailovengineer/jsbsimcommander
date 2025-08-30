@@ -19,7 +19,7 @@
 #include <vector>
 #include <list>
 
-#include "easyxml.hxx"
+#include "xml/easyxml.hxx"
 #include "FGXMLElement.h"
 
 #include "shape.h"

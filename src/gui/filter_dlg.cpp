@@ -29,11 +29,11 @@
 #include "filter.h"
 #include "filter_dlg.h"
 
-#include "integrator.xpm"
-#include "lag.xpm"
-#include "ledlag.xpm"
-#include "scdorder.xpm"
-#include "washout.xpm"
+#include "bitmaps/integrator.xpm"
+#include "bitmaps/lag.xpm"
+#include "bitmaps/ledlag.xpm"
+#include "bitmaps/scdorder.xpm"
+#include "bitmaps/washout.xpm"
 
 
 

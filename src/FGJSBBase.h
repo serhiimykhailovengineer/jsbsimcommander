@@ -206,7 +206,7 @@ public:
       @return if the two values can be considered equal up to roundoff */
   static bool EqualToRoundoff(double a, double b) {
     double eps = 2.0*DBL_EPSILON;
-    return fabs(a - b) <= eps*max(fabs(a), fabs(b));
+    return fabs(a - b) <= eps*std::max(fabs(a), fabs(b));
   }
 
   /** Finite precision comparison.
@@ -215,7 +215,7 @@ public:
       @return if the two values can be considered equal up to roundoff */
   static bool EqualToRoundoff(float a, float b) {
     float eps = 2.0*FLT_EPSILON;
-    return fabs(a - b) <= eps*max(fabs(a), fabs(b));
+    return fabs(a - b) <= eps*std::max(fabs(a), fabs(b));
   }
 
   /** Finite precision comparison.

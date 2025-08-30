@@ -715,7 +715,7 @@ AircraftDialog::AircraftDialog(wxWindow* parent, int id, const wxString& title, 
     };
     combo_box_ixy = new wxComboBox(notebook_ac_pane_mass, -1, wxT(""), wxDefaultPosition, wxDefaultSize, 2, combo_box_ixy_choices, wxCB_DROPDOWN|wxCB_READONLY|wxCB_SIMPLE);
     const wxString list_box_pm_choices[] = {
-
+      wxT("")
     };
     list_box_pm = new wxListBox(notebook_ac_pane_mass, ID_PM_LIST, wxDefaultPosition, wxDefaultSize, 0, list_box_pm_choices, 0);
     button_pm_add = new wxButton(notebook_ac_pane_mass, ID_PM_ADD, _("Add a new point mass"));
@@ -771,7 +771,7 @@ AircraftDialog::AircraftDialog(wxWindow* parent, int id, const wxString& title, 
     checkbox_output_fcs = new wxCheckBox(notebook_ac_pane_output, -1, _("FCS"));
     checkbox_output_propulsion = new wxCheckBox(notebook_ac_pane_output, -1, _("propulsion"));
     const wxString list_box_output_adds_choices[] = {
-
+      wxT("")
     };
     list_box_output_adds = new wxListBox(notebook_ac_pane_output, -1, wxDefaultPosition, wxDefaultSize, 0, list_box_output_adds_choices, 0);
     text_ctrl_output = new wxTextCtrl(notebook_ac_pane_output, -1, wxT(""));

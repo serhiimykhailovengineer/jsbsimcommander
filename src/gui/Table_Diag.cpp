@@ -170,12 +170,12 @@ TableDialog::TableDialog(wxWindow* parent, int id, const wxString& title, const 
     button_detail_frame = new wxButton(notebook_main_pane_2, DETAIL_FRAME, _("frame detail"));
     label_table_value = new wxStaticText(notebook_main_pane_2, -1, _("table ="), wxDefaultPosition, wxDefaultSize, wxALIGN_RIGHT);
     const wxString combo_box_table_value_choices[] = {
-        
+        wxT("")
     };
     combo_box_table_value = new wxComboBox(notebook_main_pane_2, TABLE_VALUE, wxT(""), wxDefaultPosition, wxDefaultSize, 0, combo_box_table_value_choices, wxCB_DROPDOWN|wxCB_READONLY);
     label_frame_value = new wxStaticText(notebook_main_pane_2, -1, _("frame ="), wxDefaultPosition, wxDefaultSize, wxALIGN_RIGHT);
     const wxString combo_box_frame_value_choices[] = {
-        
+        wxT("")
     };
     combo_box_frame_value = new wxComboBox(notebook_main_pane_2, FRAME_VALUE, wxT(""), wxDefaultPosition, wxDefaultSize, 0, combo_box_frame_value_choices, wxCB_DROPDOWN|wxCB_READONLY);
     grid_value = new wxGrid(notebook_main_pane_2, GRID_VALUE);
@@ -1338,7 +1338,7 @@ ParameterDialog::ParameterDialog(wxWindow* parent, int id, const wxString& title
 {
     // begin wxGlade: ParameterDialog::ParameterDialog
     const wxString list_box_parameter_choices[] = {
-        
+        wxT("")
     };
     list_box_parameter = new wxListBox(this, -1, wxDefaultPosition, wxDefaultSize, 0, list_box_parameter_choices, wxLB_MULTIPLE );
     button_add = new wxButton(this, ADD_STR, _("Add"));

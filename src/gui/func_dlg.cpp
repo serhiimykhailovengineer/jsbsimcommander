@@ -124,7 +124,7 @@ FCSFunctionDialog::FCSFunctionDialog(FCSFunction * componment, wxWindow* parent,
     label_min = new wxStaticText(notebook_Main_pane_basic, -1, _("Min:"));
     text_ctrl_clipmin = new wxTextCtrl(notebook_Main_pane_basic, -1, wxT(""), wxDefaultPosition, wxDefaultSize, 0, wxTextValidator(wxFILTER_NONE, &clipmin));
     const wxString list_box_input_choices[] = {
-        
+        wxT("")
     };
     list_box_input = new wxListBox(notebook_Main_pane_input, ID_INPUT_LISTBOX, wxDefaultPosition, wxDefaultSize, 0, list_box_input_choices, wxLB_SINGLE|wxLB_NEEDED_SB);
     const wxString radio_box_set_choices[] = {

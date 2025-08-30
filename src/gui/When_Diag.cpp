@@ -274,7 +274,7 @@ WhenDialog::WhenDialog(wxWindow* parent, int id, const wxString& title, const wx
     notebook_main_pane_2 = new wxPanel(notebook_main, -1);
     notebook_main_pane_1 = new wxPanel(notebook_main, -1);
     const wxString list_box_para_choices[] = {
-        
+        wxT("")
     };
     list_box_para = new wxListBox(notebook_main_pane_1, ID_PARA_LIST, wxDefaultPosition, wxDefaultSize, 0, list_box_para_choices, 0);
     button_para_append = new wxButton(notebook_main_pane_1, ID_PARA_APPEND, _("Append"));
@@ -294,7 +294,7 @@ WhenDialog::WhenDialog(wxWindow* parent, int id, const wxString& title, const wx
     text_ctrl_para_value = new wxTextCtrl(notebook_main_pane_1, ID_PARA_TEXT, wxT(""), wxDefaultPosition, wxDefaultSize, wxTE_PROCESS_ENTER);
     button_para_value = new wxButton(notebook_main_pane_1, ID_PARA_VALUE, wxT("..."));
     const wxString list_box_set_choices[] = {
-        
+        wxT("")
     };
     list_box_set = new wxListBox(notebook_main_pane_2, ID_SET_LIST, wxDefaultPosition, wxDefaultSize, 0, list_box_set_choices, 0);
     button_set_append = new wxButton(notebook_main_pane_2, ID_SET_APPEND, _("Append"));
@@ -304,7 +304,7 @@ WhenDialog::WhenDialog(wxWindow* parent, int id, const wxString& title, const wx
     button_set_name = new wxButton(notebook_main_pane_2, ID_SET_NAME, wxT("..."));
     label_set_eq = new wxStaticText(notebook_main_pane_2, -1, wxT("="));
     const wxString text_ctrl_set_value_choices[] = {
-        
+        wxT("")
     };
     text_ctrl_set_value = new wxTextCtrl(notebook_main_pane_2, ID_SET_TEXT, wxT(""), wxDefaultPosition, wxDefaultSize, wxTE_PROCESS_ENTER);
     button_set_value = new wxButton(notebook_main_pane_2, ID_SET_VALUE, wxT("..."));

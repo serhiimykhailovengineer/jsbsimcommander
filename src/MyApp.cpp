@@ -33,9 +33,9 @@
 #include <wx/txtstrm.h>            // wxTextOutputStream
 
 #include "MyApp.h"
-#include "MyFrame.h"
-#include "Property_Diag.h"
-#include "EngineMgr_Diag.h"
+#include "gui/MyFrame.h"
+#include "gui/Property_Diag.h"
+#include "gui/EngineMgr_Diag.h"
 
 #include "initprops.h"
 
@@ -44,7 +44,7 @@
  * in the application itself.
  */
 
-IMPLEMENT_APP (MyApp)
+IMPLEMENT_APP_CONSOLE (MyApp)
 
 /**
 * MyApp ========================================================================

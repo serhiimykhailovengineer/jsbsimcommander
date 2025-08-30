@@ -78,7 +78,7 @@ class TreeItemData_base : public wxTreeItemData {
     virtual void Load(JSBSim::Element * el){}
     virtual void Save(wxTextOutputStream & out, const wxString & prefix){}
     virtual void PrepareMenu(wxMenu & menu){}
-    virtual int ShowDialog(void * data = NULL){}
+    virtual int ShowDialog(void * data = NULL){ return 0;}
     wxTreeCtrl* tree;
 };
 

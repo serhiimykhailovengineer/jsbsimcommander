@@ -6416,7 +6416,7 @@ void PlotHandler::OnOpen(wxCommandEvent& event)
       Save();
     }
   }
-  wxString  filename = wxFileSelector(_("Choose a file to open"), wxT(""), wxT(""), wxT("xml"), wxT("XML files(*.xml)|*.xml"), wxOPEN|wxFILE_MUST_EXIST, owner);
+  wxString  filename = wxFileSelector(_("Choose a file to open"), wxT(""), wxT(""), wxT("xml"), wxT("XML files(*.xml)|*.xml"), wxFD_OPEN|wxFD_FILE_MUST_EXIST, owner);
   if ( !filename.empty() )
   {
       Load(filename);
@@ -6472,7 +6472,7 @@ void PlotHandler::OnSave(wxCommandEvent& event)
 void PlotHandler::OnSaveAs(wxCommandEvent& event)
 {
   event.Skip();
-  wxString  filename = wxFileSelector(_("Choose a file to save"), wxT(""), FileName.AfterLast (wxFileName::GetPathSeparator()).BeforeLast (wxT ('.')), wxT("xml"), wxT("XML files (*.xml)|*.xml|BMP files (*.bmp)|*.bmp|JPEG files (*.jpg)|*.jpg|PNG files (*.png)|*.png"), wxSAVE|wxOVERWRITE_PROMPT, owner);
+  wxString  filename = wxFileSelector(_("Choose a file to save"), wxT(""), FileName.AfterLast (wxFileName::GetPathSeparator()).BeforeLast (wxT ('.')), wxT("xml"), wxT("XML files (*.xml)|*.xml|BMP files (*.bmp)|*.bmp|JPEG files (*.jpg)|*.jpg|PNG files (*.png)|*.png"), wxFD_SAVE|wxFD_OVERWRITE_PROMPT, owner);
   if ( !filename.empty() )
   {
       wxString suf = filename.AfterLast(wxT('.'));

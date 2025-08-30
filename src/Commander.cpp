@@ -32,9 +32,9 @@
 #include <wx/wfstream.h>            // wxFileOutputStream
 
 #include "MyApp.h"
-#include "AircraftDialog.h"
-#include "Property_Diag.h"
-#include "EngineMgr_Diag.h"
+#include "gui/AircraftDialog.h"
+#include "gui/Property_Diag.h"
+#include "gui/EngineMgr_Diag.h"
 
 #include "initprops.h"
 

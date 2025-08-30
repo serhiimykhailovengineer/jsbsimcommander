@@ -25,12 +25,12 @@
 using std::cerr;
 using std::endl;
 
-#ifdef _MSC_VER
-// MSVC is buggy, and needs something strange here
-using std::vector<SGPropertyNode_ptr>;
-using std::vector<SGPropertyChangeListener *>;
-using std::vector<SGPropertyNode *>;
-#endif
+// #ifdef _MSC_VER
+// // MSVC is buggy, and needs something strange here
+// using std::vector<SGPropertyNode_ptr>;
+// using std::vector<SGPropertyChangeListener *>;
+// using std::vector<SGPropertyNode *>;
+// #endif
 
 #endif
 

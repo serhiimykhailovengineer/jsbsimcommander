@@ -15,3 +15,22 @@ find_package(wxWidgets 2.8.12 COMPONENTS core base xrc html adv core xml REQUIRE
 include(${wxWidgets_USE_FILE})
 
 add_subdirectory(src)
+
+file(
+	COPY
+		resources/engine
+	DESTINATION 
+		${CMAKE_BINARY_DIR}/bin
+)
+file(
+	COPY
+		resources/f16.xml
+	DESTINATION 
+		${CMAKE_BINARY_DIR}/bin
+)
+file(
+	COPY
+		resources/prop.csv
+	DESTINATION 
+		${CMAKE_BINARY_DIR}/bin
+)

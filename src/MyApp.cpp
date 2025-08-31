@@ -44,7 +44,7 @@
  * in the application itself.
  */
 
-IMPLEMENT_APP_CONSOLE (MyApp)
+IMPLEMENT_APP (MyApp)
 
 /**
 * MyApp ========================================================================

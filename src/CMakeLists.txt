@@ -25,13 +25,21 @@ target_link_libraries(JSBSim PUBLIC CommonHeader)
 # 	Commander.cpp
 # )
 
-# add_executable(Commander ${Commander_SOURCES})
+# add_executable(Commander WIN32 ${Commander_SOURCES})
 # target_link_libraries(Commander PUBLIC CommonHeader InputOutput Expat Properties GUI Math MattPlot Deprecated OGL Plot ${wxWidgets_LIBRARIES})
 
 set(JSBSimCommander_SOURCES
 	MyApp.cpp
 )
-add_executable(JSBSimCommander ${JSBSimCommander_SOURCES})
+add_executable(JSBSimCommander WIN32 ${JSBSimCommander_SOURCES})
 target_link_libraries(JSBSimCommander PUBLIC CommonHeader JSBSim InputOutput Expat Properties GUI Math MattPlot Deprecated OGL Plot ${wxWidgets_LIBRARIES})
+set_target_properties(JSBSimCommander PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "$<IF:$<CONFIG:Debug>,${CMAKE_BINARY_DIR}/bin,${CMAKE_BINARY_DIR}/bin>"
+)
 
-
+file(
+	COPY
+		rc
+	DESTINATION 
+		${CMAKE_BINARY_DIR}/bin
+)

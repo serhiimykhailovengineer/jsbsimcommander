@@ -5,6 +5,9 @@ project(JSBSimCommander)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 message(STATUS "wxWidgets_ROOT_DIR: ${wxWidgets_ROOT_DIR}")
 
 find_package(wxWidgets 2.8.12 COMPONENTS core base xrc html adv core xml REQUIRED)
